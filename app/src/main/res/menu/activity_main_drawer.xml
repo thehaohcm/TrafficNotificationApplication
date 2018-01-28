@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/switchRadio"
+            android:title="Radio trực tuyến"
+            android:clickable="false"
+            android:layout_centerVertical="true"
+            app:actionLayout="@layout/switch_layout"
+            app:showAsAction="always"
+            />
+        <item
+            android:id="@+id/switchCamera"
+            android:title="Camera giao thông"
+            android:clickable="false"
+            android:layout_centerVertical="true"
+            app:actionLayout="@layout/switch_layout"
+            app:showAsAction="always"
+            />
+        <item
+            android:id="@+id/switchFlooding"
+            android:title="Tình trạng ngập nước"
+            android:clickable="false"
+            android:layout_centerVertical="true"
+            app:actionLayout="@layout/switch_layout"
+            app:showAsAction="always"
+            />
+
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Đăng nhập/Đăng ký" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Thông báo" />
+        <item
+            android:id="@+id/nav_rss"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tin tức giao thông" />
+        <item
+            android:id="@+id/nav_weather"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Thông tin thời tiết" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Cài đặt" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Giới thiệu về phần mềm" />
+
+    </group>
+
+    <item
+        android:id="@+id/menuAccount"
+        android:title="Tài khoản">
+        <menu>
+            <item
+                android:id="@+id/nav_favoriteLocation"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Địa điểm ưa thích" />
+            <item
+                android:id="@+id/nav_historyLocation"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Lịch sử" />
+            <item
+                android:id="@+id/nav_editAccount"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Thay đổi tài khoản" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Đăng xuất" />
+        </menu>
+    </item>
+
+</menu>

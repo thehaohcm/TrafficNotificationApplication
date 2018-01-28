@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thehaohcm.trafficnotificationapplication.Fragment.WeatherConditionFragment">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icon_na"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/weatherIconImageView"
+        android:contentDescription="@string/condition_icon"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/day"
+        android:id="@+id/dayTextView"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@+id/weatherIconImageView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/highTemperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dayTextView"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dp"
+        android:text="@string/high"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/lowTemperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/highTemperatureTextView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/low"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/light_text" />
+</RelativeLayout>

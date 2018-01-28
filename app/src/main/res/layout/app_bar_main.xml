@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thehaohcm.trafficnotificationapplication.Activity.MainActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/presence_away" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        <fragment
+            android:id="@+id/place_autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+
+        />
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#B5B4B4"
+            android:orientation="horizontal">
+
+            <!--<EditText-->
+            <!--android:id="@+id/txtSearchStreet"-->
+            <!--android:layout_width="278dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:ems="10"-->
+            <!--android:hint="@string/prompt_searchStreet"-->
+            <!--android:inputType="textPersonName" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/btnSearchStreet"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Tìm kiếm"/>-->
+            <!--<fragment-->
+            <!--android:id="@+id/place_autocomplete_fragment"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"-->
+            <!--/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#B5B4B4"
+                android:orientation="horizontal">
+
+                <!--<EditText-->
+                <!--android:id="@+id/txtSearchStreet"-->
+                <!--android:layout_width="278dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:ems="10"-->
+                <!--android:hint="@string/prompt_searchStreet"-->
+                <!--android:inputType="textPersonName" />-->
+
+                <!--<Button-->
+                <!--android:id="@+id/btnSearchStreet"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Tìm kiếm"/>-->
+                <!--<fragment-->
+                <!--android:id="@+id/place_autocomplete_fragment"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"-->
+                <!--/>-->
+
+                <TextView
+                    android:id="@+id/lblMaxSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Tốc độ cho phép: 0 km/h"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=" | "
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/lblCurrentSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Tốc độ hiện tại: 0 km/h"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+
+</android.support.design.widget.CoordinatorLayout>

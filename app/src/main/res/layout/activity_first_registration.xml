@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thehaohcm.trafficnotificationapplication.Activity.FirstRegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        android:gravity="center"
+
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:text="Traffic Application"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="343dp"
+            android:layout_height="111dp"
+            android:text="Traffic Application là một ứng dụng giúp mọi người có thể chia sẻ thông tin về tình hình giao thông về các tuyến đường đã đi qua. Ngay từ bây giờ, bạn có thể đăng ký tham gia vào hệ thống của chúng tôi để xem xét cũng như thông báo về tình hình giao thông trên tuyến đường bạn đang đi. "
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="73dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="341dp"
+            android:layout_height="32dp"
+            android:text="Số điện thoại:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_weight="0.00" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="0.02"
+            android:gravity="top|center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/txtPhone"
+                        android:layout_width="205dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:hint="@string/prompt_phone"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lblCheckPhoneFail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_next" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

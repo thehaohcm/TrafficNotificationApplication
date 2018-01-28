@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="512px"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10px"
+        android:layout_marginRight="0px"
+        android:text="Phản hồi về tuyến đường"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgThumbMessage"
+        android:layout_width="512px"
+        android:layout_height="288px"
+        android:layout_marginEnd="10px"
+        android:layout_marginRight="0px"
+        android:layout_marginTop="10px"
+        app:srcCompat="@drawable/camera" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="512px"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10px"
+        android:layout_marginRight="0px"
+        android:text="Nội dung: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="10px"
+        android:layout_width="512px"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMessageContentThumb"/>
+</LinearLayout>
